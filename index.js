@@ -1,9 +1,8 @@
 import angular from "angular";
 import "@uirouter/angularjs";
-import "oclazyload";
 import "./modules/main.module"
 
-let app = angular.module("AngularComponentDemo", ['ui.router', 'oc.lazyLoad', 'main.module'])
+let app = angular.module("AngularComponentDemo", ['ui.router', 'main.module'])
     
 app.config(["$locationProvider", function ($locationProvider) {    
     $locationProvider.html5Mode(true);
